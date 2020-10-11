@@ -8,17 +8,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  return list.map (function(name){
-    newArray ="hello " + name;
-    return newArray;
-  });
   
+  list.forEach(function(name, index) {
+    let string = "hello ";
+    list[index] = string.concat(name);
+  });
+  return list;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
-
+console.log(greet(["Alex", "Alexandre"]));
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)
