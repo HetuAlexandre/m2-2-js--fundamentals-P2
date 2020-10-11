@@ -12,7 +12,7 @@ function greetLong(list) {
   return list.filter (function(name){
     return name.length >= 4;
   }).map(function(name){
-    let greet ="hello";
+    let greet ="Hello ";
     return greet.concat(name);
   });
 }
